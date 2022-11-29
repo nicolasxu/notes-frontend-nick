@@ -28,3 +28,22 @@ const kk = throttle(() => console.log('nick'), 1000)
 kk()
 kk()
 kk()
+
+function throttle2(func, duration) {
+
+	let inThrottle = false
+	let timeOutHandle = null
+
+	return function throttledFunc() {
+		if (inThrottle) {
+			// do nothing
+		} else {
+			//  start the throttle
+			timeOutHandle = setTimeout(() => {
+				inThrottle = false
+				func()
+			}, duration)
+			inThrottle = true
+		}
+	}
+}

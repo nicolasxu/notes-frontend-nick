@@ -9,7 +9,7 @@ function debounce(func, duration) {
 
 		if (isInDebounce) {
 			clearTimeout(timeOutHandle)
-			setTimeout(() => {
+			timeOutHandle = setTimeout(() => {
 				isInDebounce = false
 				func()
 			}, duration)
