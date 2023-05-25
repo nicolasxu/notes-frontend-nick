@@ -1,0 +1,25 @@
+1. trim details to focus on big picture(core function or challenges)
+2. Transactions is abstraction of database
+
+3. RPC (remote procedure call) as communication mechanism
+  - pro: high performance and simple abstraction
+  - server stub
+  - client stub
+
+4. consistency Models
+    Strongest consistency
+    Weakest consistency
+    Eventual consistency -> casual consistency -> sequential consistency -> strict (linearizability) consistency
+    (weak)                                                                  (strong)
+  - Eventual consistency ensures high availability
+    e.g.: - domain name system
+          - Cassandra is a highly available NoSQL database that provides eventual consistency.
+  - strict consistency
+    e.g.: changing password
+
+5. failure models
+  - Fail-stop
+  - Crash
+  - Omission failures#
+  - Temporal failures#
+  - Byzantine failures#

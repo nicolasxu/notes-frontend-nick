@@ -1,0 +1,32 @@
+1. question normally open and vague, mimics the reality.
+2. best practice
+  - solidify the requirement
+  - scope the problem
+  - engage interviewer
+3. provide fault tolerance at design level
+4. Guide:
+    Robustness (the ability to maintain operations during a crisis)
+    Scalability
+    Availability
+    Performance
+    Extensibility
+    Resiliency (the ability to return to normal operations over an acceptable period of time post disruption)
+5. functional and nonfunctional requirements
+6. understand data:
+  - size
+  - grow? rate
+  - how data consumed by user or sub system
+  - read heavy or write heavy
+  - privacy and regulatory requirements
+  - strict consistency
+  - durability, persistence?
+7. system component example:
+   load balancers, caches, databases, firewalls, and CDNs
+8. discuss trade off
+9. tips:
+    Don’t write code
+    Don’t start building without a plan.
+    Don’t work in silence.
+    Don’t describe numbers without reason. We have to frame it.
+    If we don’t know something, we don’t paper over it, and we don’t pretend to know it.
+

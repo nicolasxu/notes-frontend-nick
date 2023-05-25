@@ -1,0 +1,28 @@
+Non-functional System Characteristics
+
+
+- Availability
+  99.99% (4 nines) 52.56 minutes down time per year
+- reliability
+  mean time between failures (MTBF)
+- Scalability
+  - Request workload
+  - Data/storage workload
+
+  - Vertical scalability—scaling up#
+  - Horizontal scalability—scaling out#
+
+- Maintainability
+  - Operability
+  - Lucidity (simplicity of the code)
+  - Modifiability
+
+  - How to measure: (mean time to repair) MTTR
+  - The only difference between them is the variable of interest
+    - Maintainability refers to time-to-repair/change due to requirement changes and normal wear and tear
+    - Reliability refers to both time-to-repair and the time-to-failure
+
+
+  - Fault Tolerance, how
+    - Replication
+    - Checkpointing

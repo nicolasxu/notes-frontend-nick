@@ -1,0 +1,22 @@
+
+
+1. Latencies
+  - L1 cache reference 0.9 nanoseconds
+  - memory 100 nano
+  - SSD  (200 microseconds)
+  - Disk seek 4,000,000 nanoseconds
+  - Send packet SF->NYC 71,000,000 (71 milliseconds)
+  - database
+    - QPS handled by MySQL  1000
+    - QPS handled by key-value store
+    - 10,000
+
+  QPS handled by cache server
+  100,000–1 M
+
+2. Requests estimation#
+  - CPU-bound requests
+    RPS = number of CPU / task time, e.g.: 8 / 200ms = 40 rps
+  - Memory-bound requests
+    RPS = total ram / worker ram / task time = 240GB/ 300MB / 50ms = 16000 rps
+
