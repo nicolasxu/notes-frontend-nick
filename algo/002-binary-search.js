@@ -27,7 +27,7 @@ function binarySearch (arr, val) {
   return -1
 }
 
-const res = binarySearch(arr, 1)
+const res = binarySearch(arr, 6)
 console.log('res', res)
 
 
@@ -51,5 +51,5 @@ function binarySearchRecursive(arr, val, start, end) {
 
 }
 
-const recursiveRes = binarySearchRecursive(arr, 1, 0, arr.length - 1)
+const recursiveRes = binarySearchRecursive(arr, 6, 0, arr.length - 1)
 console.log('recursiveRes', recursiveRes)

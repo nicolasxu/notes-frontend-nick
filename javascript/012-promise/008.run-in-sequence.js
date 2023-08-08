@@ -10,13 +10,13 @@ In this example, we reduce an array of asynchronous functions down to a promise 
 
 The code above is equivalent to:
 
-Promise.resolve()
-  .then(func1)
-  .then(func2)
-  .then(func3)
+Promise.3)
   .then((result3) => {
     /* use result3 */
-  });
+  });resolve()
+  .then(func1)
+  .then(func2)
+  .then(func
 
 
 This can be made into a reusable compose function, which is common in functional programming:

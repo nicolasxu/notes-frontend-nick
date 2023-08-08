@@ -5,8 +5,8 @@ const arr = [1,23,3,45,65,87,100]
 
 
 function solution(arr) {
-  return arr.reduce((a, c, i, arr) => {
-    return a + c
+  return arr.reduce((a, v, i, arr) => {
+    return a + v
   }, 0)
 
 }
